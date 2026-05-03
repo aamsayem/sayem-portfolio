@@ -3,21 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      const isLocalDev =
-        location.hostname === "localhost" ||
-        location.hostname === "127.0.0.1" ||
-        location.port === "8080";
-
-      if (isLocalDev) {
-        const script = document.createElement("script");
-        script.type = "module";
-        script.src = "/src/main.tsx";
-        document.head.appendChild(script);
-      } else {
-        location.replace("./dist/app.html");
-      }
-    </script>
     <link rel="icon" type="image/jpeg" href="/sayemicon.jpg" />
     <link rel="shortcut icon" type="image/jpeg" href="/sayemicon.jpg" />
     <link rel="apple-touch-icon" href="/sayemicon.jpg" />
@@ -34,6 +19,7 @@
     <meta name="twitter:title" content="Abdullah Al Mahmud Sayem | Portfolio" />
     <meta name="twitter:description" content="CSE student, designer, volunteer, and entrepreneur." />
     <meta name="twitter:image" content="/sayemicon.jpg" />
+    <script type="module" src="/src/main.tsx"></script>
   </head>
 
   <body>

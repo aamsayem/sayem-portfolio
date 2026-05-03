@@ -5,6 +5,13 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(() => ({
   base: "./",
+  build: {
+    rollupOptions: {
+      input: {
+        index: path.resolve(__dirname, "app.html"),
+      },
+    },
+  },
   server: {
     host: "::",
     port: 8080,
