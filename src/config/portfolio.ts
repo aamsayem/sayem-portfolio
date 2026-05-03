@@ -6,6 +6,9 @@ export type ClubIcon = "heart" | "shield" | "monitor" | "globe" | "users" | "dro
 
 export type SocialIcon = "mail" | "github" | "linkedin" | "facebook" | "phone";
 
+const isDev = import.meta.env.DEV;
+const publicAssetBase = isDev ? "/" : `${import.meta.env.BASE_URL}public/`;
+
 export const portfolioContent = {
   brandName: "Sayem",
   ownerName: "Abdullah Al Mahmud Sayem",
@@ -23,7 +26,7 @@ export const portfolioContent = {
     nameAccent: "Sayem.",
     summary:
       "A responsible and motivated CSE student with experience in leading teams, organizing events, and making a difference through community service.",
-    resumeHref: "/Abdullah_Al_Mahmud_Sayem_Resume.pdf",
+    resumeHref: `${publicAssetBase}Abdullah_Al_Mahmud_Sayem_Resume.pdf`,
     resumeLabel: "Download CV",
     contactLabel: "Get in touch",
     scrollLabel: "Scroll to explore",
