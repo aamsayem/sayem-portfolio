@@ -3,7 +3,7 @@ import { ArrowDown, Download } from "lucide-react";
 import { portfolioContent } from "@/config/portfolio";
 
 const HeroSection = () => {
-  const heroImage = import.meta.env.DEV ? "/sayemicon.jpg" : `${import.meta.env.BASE_URL}public/sayemicon.jpg`;
+  const heroImage = import.meta.env.DEV ? "/sayemicon.jpg" : `${import.meta.env.BASE_URL}sayemicon.jpg`;
 
   return (
     <section className="min-h-screen flex flex-col justify-center section-padding relative">

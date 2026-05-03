@@ -7,7 +7,7 @@ export type ClubIcon = "heart" | "shield" | "monitor" | "globe" | "users" | "dro
 export type SocialIcon = "mail" | "github" | "linkedin" | "facebook" | "phone";
 
 const isDev = import.meta.env.DEV;
-const publicAssetBase = isDev ? "/" : `${import.meta.env.BASE_URL}public/`;
+const publicAssetBase = isDev ? "/" : import.meta.env.BASE_URL;
 
 export const portfolioContent = {
   brandName: "Sayem",
