@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Palette, Heart, Briefcase, Shield, GraduationCap } from "lucide-react";
+import { ArrowUpRight, Code, Palette, Heart, Briefcase, Shield, GraduationCap } from "lucide-react";
 import { portfolioContent } from "@/config/portfolio";
 
 const aboutIcons = {
@@ -32,6 +32,30 @@ const AboutSection = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {portfolioContent.about.traits.map((trait, i) => {
           const Icon = aboutIcons[trait.icon];
+          const cardClassName = `bg-card rounded-lg p-6 group hover:bg-accent/10 transition-colors relative ${trait.href ? "cursor-pointer" : ""}`;
+
+          if (trait.href) {
+            const externalLink = trait.href.startsWith("http");
+
+            return (
+              <motion.a
+                key={trait.label}
+                href={trait.href}
+                target={externalLink ? "_blank" : undefined}
+                rel={externalLink ? "noopener noreferrer" : undefined}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={cardClassName}
+              >
+                <ArrowUpRight className="absolute top-6 right-6 w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+                <Icon className="w-5 h-5 text-accent mb-4" />
+                <h3 className="font-display font-medium text-foreground mb-1">{trait.label}</h3>
+                <p className="text-sm text-muted-foreground">{trait.desc}</p>
+              </motion.a>
+            );
+          }
 
           return (
             <motion.div
@@ -40,7 +64,7 @@ const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-card rounded-lg p-6 group hover:bg-accent/10 transition-colors"
+              className={cardClassName}
             >
               <Icon className="w-5 h-5 text-accent mb-4" />
               <h3 className="font-display font-medium text-foreground mb-1">{trait.label}</h3>

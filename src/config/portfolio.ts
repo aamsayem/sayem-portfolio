@@ -1,5 +1,7 @@
 export type AboutTraitIcon = "graduationCap" | "palette" | "heart" | "shield" | "code" | "briefcase";
 
+export type AboutTraitHref = string;
+
 export type ClubIcon = "heart" | "shield" | "monitor" | "globe" | "users" | "droplets" | "megaphone" | "zap";
 
 export type SocialIcon = "mail" | "github" | "linkedin" | "facebook" | "phone";
@@ -33,11 +35,11 @@ export const portfolioContent = {
       "I am a responsible and motivated individual with real experience in leading teams, organizing events, and helping people through social work. I enjoy working with others and always try to complete my tasks sincerely.",
     traits: [
       { icon: "graduationCap" as AboutTraitIcon, label: "BSc in CSE", desc: "International Islamic University Chittagong" },
-      { icon: "palette" as AboutTraitIcon, label: "Designer", desc: "Graphics & visual experiences" },
+      { icon: "palette" as AboutTraitIcon, label: "Designer", desc: "Graphics & visual experiences", href: "https://www.behance.net/aamsayem" },
       { icon: "heart" as AboutTraitIcon, label: "Volunteer Leader", desc: "Selfless Organization BD - General Secretary" },
       { icon: "shield" as AboutTraitIcon, label: "BNCC Cadet", desc: "Cadet Sargent - military training" },
       { icon: "code" as AboutTraitIcon, label: "Programmer", desc: "C, C++, Python, Java, HTML, CSS" },
-      { icon: "briefcase" as AboutTraitIcon, label: "Entrepreneur", desc: "Running small ventures" },
+      { icon: "briefcase" as AboutTraitIcon, label: "Entrepreneur", desc: "Running small ventures", href: "#ventures" },
     ],
   },
   clubs: {
@@ -163,6 +165,13 @@ export const portfolioContent = {
         desc: "We import premium decorative items, katana swords, watches, special key rings, lights, toys and more.",
         status: "Coming Soon",
         mail: "sparkbd2026@gmail.com",
+        link: null,
+      },
+      {
+        name: "Kiddiq",
+        desc: "We offer premium imported toys for babies & kids that blend fun with learning - carefully selected for safety, quality, and brain development.",
+        status: "Coming Soon",
+        mail: "kiddiqbd@gmail.com",
         link: null,
       },
     ],
