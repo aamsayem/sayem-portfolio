@@ -164,11 +164,11 @@ export const portfolioContent = {
         link: "https://www.facebook.com/picopicks",
       },
       {
-        name: "Spark",
+        name: "Wizen",
         desc: "We import premium decorative items, katana swords, watches, special key rings, lights, toys and more.",
-        status: "Coming Soon",
-        mail: "sparkbd2026@gmail.com",
-        link: null,
+        status: "Active",
+        mail: "wizenbd@gmail.com",
+        link: "https://www.facebook.com/wizenbd",
       },
       {
         name: "Kiddiq",
