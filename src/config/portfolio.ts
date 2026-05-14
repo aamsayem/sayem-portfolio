@@ -173,9 +173,9 @@ export const portfolioContent = {
       {
         name: "Kiddiq",
         desc: "We offer premium imported toys for babies & kids that blend fun with learning - carefully selected for safety, quality, and brain development.",
-        status: "Coming Soon",
+        status: "Active",
         mail: "kiddiqbd@gmail.com",
-        link: null,
+        link: "https://www.facebook.com/kiddiqbd",
       },
     ],
   },
