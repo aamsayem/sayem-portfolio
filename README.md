@@ -21,6 +21,6 @@ From there you can change:
 ## Run
 
 - Dev mode: `npm run dev`
+- Dev mode on `127.0.0.1:5500` from Windows PowerShell: `cmd /c dev-5500.cmd`
 - Static build: `npm run static:build`
 - Build + open dist: `npm run static:ready`
-# sayem-portfolio
