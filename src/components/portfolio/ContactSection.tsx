@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Phone, MapPin, Facebook } from "lucide-react";
+import { Mail, Github, Linkedin, Phone, MapPin } from "lucide-react";
 import { portfolioContent } from "@/config/portfolio";
 
 const socialIcons = {
   mail: Mail,
   github: Github,
   linkedin: Linkedin,
-  facebook: Facebook,
   phone: Phone,
 };
 
