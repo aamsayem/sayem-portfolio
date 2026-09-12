@@ -35,9 +35,9 @@ export const portfolioContent = {
     eyebrow: "About",
     title: "I thrive at the intersection of technology, design & community.",
     description:
-      "I am a responsible and motivated individual with real experience in leading teams, organizing events, and helping people through social work. I enjoy working with others and always try to complete my tasks sincerely. I am looking for a chance to join a well-organized team where I can learn more, grow personally, and make a useful contribution to the work being done",
+      "I am a responsible and motivated individual with real experience in leading teams, organizing events, and helping people through social work. I enjoy working with others and always try to complete my tasks sincerely.",
     traits: [
-      { icon: "graduationCap" as AboutTraitIcon, label: "BSc in CSE", desc: "International Islamic University Chittagong • CGPA 3.52 out of 4.00" },
+      { icon: "graduationCap" as AboutTraitIcon, label: "BSc in CSE", desc: "International Islamic University Chittagong" },
       { icon: "palette" as AboutTraitIcon, label: "Designer", desc: "Graphics & visual experiences", href: "https://www.behance.net/aamsayem" },
       { icon: "heart" as AboutTraitIcon, label: "Volunteer Leader", desc: "Selfless Organization BD • General Secretary" },
       { icon: "shield" as AboutTraitIcon, label: "BNCC Cadet", desc: "Cadet Sargent • military training" },
@@ -58,7 +58,7 @@ export const portfolioContent = {
       },
       {
         icon: "shield" as ClubIcon,
-        name: "Bangladesh National Cadet Corps (BNCC)",
+        name: "Bangladesh National Cadet Crops, BNCC",
         role: "Cadet Sargent",
         desc: "Led two military training programs. Participated in COVID-19 awareness campaigns.",
         period: "08/2019 – 08/2021",
@@ -67,15 +67,22 @@ export const portfolioContent = {
         icon: "users" as ClubIcon,
         name: "Red Crescent Youth, Chittagong",
         role: "Deputy Team Leader-2, Red Crescent Unit, IIUC",
-        desc: "Contributed to humanitarian initiatives and youth-led community service under the Red Crescent Unit.",
+        desc: "",
         period: "06/2026 – Present",
+      },
+      {
+        icon: "monitor" as ClubIcon,
+        name: "IIUC Computer Club",
+        role: "Event Secretary",
+        desc: "",
+        period: "09/2026 – Present",
       },
       {
         icon: "monitor" as ClubIcon,
         name: "IIUC Computer Club",
         role: "Assistant Social Welfare Secretary",
         desc: "Received the Most Dedicated Member Award.",
-        period: "10/2025 – Present",
+        period: "10/2025 – 09/2026",
       },
       {
         icon: "monitor" as ClubIcon,
@@ -124,7 +131,7 @@ export const portfolioContent = {
         name: "SURGE Bangladesh",
         role: "Campus Ambassador",
         desc: "Handled full day offline registration booth and information session at IIUC campus.",
-        period: "03/2026 – Present",
+        period: "03/2026 – 08/2026",
       },
     ],
   },
@@ -171,6 +178,7 @@ export const portfolioContent = {
       { title: "3rd place in Graphics Design Bootcamp 2025", org: "IIUC Developers & Entrepreneurs Society", date: "03/2026" },
       { title: "Champion at Volleyball", org: "Bangladesh National Cadet Corps", date: "11/2019" },
       { title: "Most Dedicated Member Award", org: "IIUC Computer Club", date: "06/2026" },
+      { title: "Best Campus Ambassador", org: "SURGE Bangladesh", date: "09/2026" },
     ],
   },
   ventures: {
